@@ -21,7 +21,12 @@ const FilterContainer = styled.div`
 `;
 const Filter = styled.div`
   margin: 20px;
-  ${mobile({ width: "0px 20px", display: "flex", flexDirection: "column" })}
+  ${mobile({
+    width: "0px 20px",
+    display: "flex",
+    flexDirection: "column",
+    margin: "10px",
+  })}
 `;
 const FilterText = styled.span`
   font-size: 20px;
@@ -63,7 +68,7 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
   border: none;
-  ${mobile({ width: "50px" })}
+  ${mobile({ width: "100px" })}
 `;
 
 const Center = styled.div`
@@ -75,7 +80,7 @@ const Logo = styled.h1`
   font-weight: bold;
   color: #333;
 
-  ${mobile({ fontSize: "24px", marginLeft: "5px" })}
+  ${mobile({ fontSize: "17px" })}
 `;
 
 const Right = styled.div`
@@ -87,7 +92,6 @@ const Right = styled.div`
 `;
 
 const Button = styled.button`
-  width: 10%;
   border: none;
   padding: 15px 20px;
   background-color: blue;

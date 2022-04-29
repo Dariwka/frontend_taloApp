@@ -8,7 +8,7 @@ const ColumnTalot = styled.div`
   float: left;
   width: 25%;
   padding: 0 10px;
-  ${mobile({ width: "100%", display: "block", marginBottom: "20px" })}
+  ${mobile({ width: "90%", display: "block", margin: "20px", padding: "0px" })}
 `;
 
 const CardTalot = styled.div`
