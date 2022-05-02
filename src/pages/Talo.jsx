@@ -4,9 +4,9 @@ import styled from "styled-components";
 import { mobile } from "../responsive";
 
 const ColumnTalot = styled.div`
-  margin: 15px;
+  margin: 10px;
   float: left;
-  width: 25%;
+  width: 30%;
   padding: 0 10px;
   ${mobile({ width: "90%", display: "block", margin: "20px", padding: "0px" })}
 `;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTalo } from "../redux/apiCalls";
+import { mobile } from "../responsive";
 import styled from "styled-components";
 
 const FormContainer = styled.form`
@@ -10,6 +11,7 @@ const Input = styled.input`
   min-width: 30%;
   margin: 15px 10px 0px 0px;
   padding: 10px;
+  ${mobile({ minWidth: "79%" })}
 `;
 
 const Select = styled.select`
@@ -19,7 +21,7 @@ const Select = styled.select`
 `;
 const ButtonSubmit = styled.button`
   margin: 10px 0;
-  width: 10%;
+
   border: none;
   padding: 15px 20px;
   background-color: green;
@@ -36,7 +38,7 @@ const ButtonSubmit = styled.button`
 `;
 const ButtonCancle = styled.button`
   margin: 10px 10px 0 0;
-  width: 10%;
+
   border: none;
   padding: 15px 20px;
   background-color: red;
