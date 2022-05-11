@@ -35,11 +35,11 @@ export const getTalot = async (dispatch) => {
   }
 };
 
-export const deleteTalo = async (id, dispatch) => {
+export const deleteTalo = async (title, dispatch) => {
   dispatch(deleteTaloStart());
   try {
     // const res = await userRequest.delete(`/products/${id}`);
-    dispatch(deleteTaloSuccess(id));
+    dispatch(deleteTaloSuccess(title));
   } catch (err) {
     dispatch(deleteTaloFailure());
   }

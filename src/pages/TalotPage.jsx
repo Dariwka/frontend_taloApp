@@ -238,6 +238,7 @@ const TalotPage = () => {
           {filteredData().map((item) => (
             <Talo
               key={item._id}
+              id={item._id}
               title={item.title}
               address={item.address}
               floor={item.floor}
